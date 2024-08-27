@@ -7,6 +7,7 @@ import {
 
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
+import StudentManagement from "./components/StudentManagement";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <Route path="/" element={<Login />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="*" element={<Navigate to="/" />} />
+      <Route path="/studentdashboard" element={ <StudentManagement />} />
+     
     </Routes>
   </Router>
   );
